@@ -564,11 +564,12 @@ def Main_function():
                                                     'time': current_time,
                                                     'state': response_data['type']} 
                                                 
-                                                text = name +" -> "+ response_data['type']                                            
+                                                text = name +" -> "+ response_data['type']
+                                                color = (17, 255, 0)
                                                 print(f"API called for {name}: {response_data['type']}")
                                             except Exception:
-                                                text = name +" -> "+ response_data['type']                                            
-                                                
+                                                text = "Error"
+                                                color = (0, 0, 255)                                                
                                             
                                         else:
                                             text = name + " -> " + last_api_call_time[name]['state']
