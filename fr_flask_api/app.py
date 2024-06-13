@@ -19,7 +19,7 @@ app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
 
 def create_user_folder(name, email, user_id):
-    folder_name = f"{name}-{email}-{user_id}"
+    folder_name = f"{name}--{email}--{user_id}"
     folder_path = app.config['UPLOAD_FOLDER'] + folder_name
     os.makedirs(folder_path, exist_ok=True)
     return folder_path
