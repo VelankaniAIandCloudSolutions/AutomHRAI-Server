@@ -13,12 +13,14 @@ LANES = [1,2]
 # STREAM_LINKS = ["rtsp://service:Ncrtc!123$@169.169.69.10/?inst=2"]
 # STREAM_LINKS = ["rtsp://admin:admin@169.169.69.103:554/1/h265major/"]
 # STREAM_LINKS = ["rtsp://admin:admin123@192.168.1.100:554/cam/realmonitor?channel=1&subtype=0"]
-STREAM_LINKS = ["rtsp://admin:Admin123@10.1.68.50:554"]
+STREAM_LINKS = ["rtsp://admin:Admin123@10.1.68.52:554"]
+# STREAM_LINKS = ["rtsp://admin:Admin123@10.1.68.50:554"]
 # STREAM_LINKS=['/home/heet/Downloads/vlc-record-2023-04-04-12h23m06s-rtsp___192.168.0.100_554_-.avi']
 # STREAM_LINKS = ["rtsp://admin:admin123@192.168.0.100:554/cam/realmonitor?channel=1&subtype=0"]
 # STREAM_LINKS=[0]
 
-ROI = [237, 100, 980, 600]
+ROI = [738, 199, 1663, 1439]
+# ROI = [237, 100, 980, 600]
 
 # Model settings
 FACE_DETECTION_MODEL = 'models/frozen_models/yolov5n-face-320.onnx'

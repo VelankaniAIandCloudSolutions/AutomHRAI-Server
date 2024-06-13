@@ -22,7 +22,7 @@ class Velankani:
     
     def sync_user_from_directory(self, directory_path):
         # print(directory_path)
-        username, user_id = directory_path.split('/')[-1].split('--')
+        username, email_id, user_id = directory_path.split('/')[-1].split('--')
         
         emb_img = {}
         for i, image_filename in enumerate(os.listdir(directory_path)):
@@ -34,7 +34,7 @@ class Velankani:
             if len(self.get_embeddings(img_array)[0][0]) > 0:
                 emb_img[i] = self.get_embeddings(img_array)[0][0]
         
-        self.db.add_user(employee_id=user_id, name=username, mobile=None, email=None, embedding_dict=emb_img, allowed=True, blacklist=False)
+        self.db.add_user(employee_id=user_id, name=username, mobile=None, email=email_id, embedding_dict=emb_img, allowed=True, blacklist=False)
         print(username, "added!")
 
 
